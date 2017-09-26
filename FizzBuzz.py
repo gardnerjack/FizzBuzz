@@ -1,8 +1,5 @@
-print("Hello, git!")
-
 def FizzBuzz(n):
-        for i in range(1, 101):
-                    print(('' if i%3 else 'Fizz')+('' if i%5 else 'Buzz') or i)
+        print('\n'.join([('' if i%3 else 'Fizz')+('' if i%5 else 'Buzz') or str(i) for i in range(1, n)]))
 
-FizzBuzz(100)
-
+n = int(input("Enter a number: "))
+FizzBuzz(n)
